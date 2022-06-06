@@ -18,14 +18,8 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-  jobs:
-
 - task: JavaToolInstaller@0
   inputs:
-    versionSpec: '8'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'LocalDirectory'
-    cleanDestinationDirectory: true
     versionSpec: '7'
-    jdkArchitectureOption: 'x86'
+    jdkArchitectureOption: 'x64'
     jdkSourceOption: 'PreInstalled'
